@@ -15,10 +15,6 @@ This project is a simple web page for a fictional pizza restaurant, created usin
 - CSS
 - Bootstrap 5
 
-## Screenshots
-
-Include any screenshots or GIFs of the web page to showcase the design and layout.
-
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/your-username/pizza-restaurant-webpage.git`
