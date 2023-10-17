@@ -9,9 +9,11 @@ body {
   color: white;
 }
 
-h1 {
+.texto-hero {
   font-size: 7rem;
+  font-weight: 600;
 }
+
 
 .hero-header {
   background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
@@ -39,17 +41,6 @@ h1 {
   background-color: #ffc30b;
   border: none;
   color: black;
-}
-
-.card-menu{
-  max-height: 400px;
-  width: auto;
-}
-
-.card-menu:hover {
-  background-color: lightgray;
-  transform: scale(1.1);
-  /* Otros estilos de transición aquí si lo deseas */
 }
 
 

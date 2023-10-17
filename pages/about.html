@@ -22,91 +22,172 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+
     <style>
-      .masthead {
-        height: 100vh;
-        min-height: 500px;
-        background-image: url("/assets/header.jpg");
+      .login {
+        min-height: 100vh;
+      }
+
+      .bg-image {
+        background-image: url(/assets/stock/vertical-pizzas.jpg);
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: multiply;
-        opacity: 0.9;
+      }
+
+      .login-heading {
+        font-weight: 300;
+      }
+
+      .btn-login {
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        padding: 0.75rem 1rem;
       }
     </style>
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="bg-primary text-center py-5 mb-4">
-      <div class="container">
-        <h1 class="fw-light text-white">Meet the Team</h1>
-      </div>
-    </header>
+    <nav class="navbar fixed-top navbar-expand-lg bg-light shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/designs/pecora.png" alt="logo" height="50px" />
+        </a>
 
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-0 shadow">
-            <img
-              src="https://source.unsplash.com/TMgQMXoglsM/500x350"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Team Member</h5>
-              <div class="card-text text-black-50">Web Developer</div>
-            </div>
-          </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#restaurant-navbar"
+          aria-controls="restaurant-navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="restaurant-navbar"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-3">
+              <a href="#" class="nav-link text-dark">inicio</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="../index.html#Recomendaciones" class="nav-link text-dark"
+                >Recomendado</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a href="../index.html#chefs" class="nav-link text-dark">Chefs</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="/pages/menu.html" class="nav-link text-dark">Carta</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="/pages/about.html" class="nav-link text-dark"
+                >Contacto</a
+              >
+            </li>
+          </ul>
         </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-0 shadow">
-            <img
-              src="https://source.unsplash.com/9UVmlIb0wJU/500x350"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Team Member</h5>
-              <div class="card-text text-black-50">Web Developer</div>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-0 shadow">
-            <img
-              src="https://source.unsplash.com/sNut2MqSmds/500x350"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Team Member</h5>
-              <div class="card-text text-black-50">Web Developer</div>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 4 -->
-        <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-0 shadow">
-            <img
-              src="https://source.unsplash.com/7u5mwbu7qLg/500x350"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Team Member</h5>
-              <div class="card-text text-black-50">Web Developer</div>
+      </div>
+    </nav>
+
+    <div class="py-4"></div>
+
+    <div class="container-fluid ps-md-0">
+      <div class="row g-0">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="col-md-8 col-lg-6">
+          <div class="login d-flex align-items-center py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-8 mx-auto">
+                  <div class="container text-center">
+                    <img
+                      src="/assets/designs/pecora.png"
+                      style="height: 300px"
+                    />
+                  </div>
+
+                  <h2 class="mb-4 text-center">Quieres decirnos algo?</h2>
+                  <form id="contactForm">
+                    <!-- nombre -->
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control"
+                        id="name"
+                        type="text"
+                        placeholder="Nombre"
+                      />
+                      <label for="name">Nombre</label>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control"
+                        id="emailAddress"
+                        type="email"
+                        placeholder="Email"
+                      />
+                      <label for="emailAddress">Email</label>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="form-floating mb-3">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        type="text"
+                        placeholder="Mensaje"
+                        style="height: 15rem"
+                      ></textarea>
+                      <label for="message">Mensaje</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="d-grid">
+                      <button
+                        class="btn btn-primary btn-lg"
+                        id="submitButton"
+                        type="submit"
+                      >
+                        Enviar
+                      </button>
+                    </div>
+                  </form>
+                  <!-- End of contact form -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- /.row -->
     </div>
-    <!-- /.container -->
+
+        <!-- Footer-->
+        <footer class="bg-opacity-50 bg-gradient rounded-3 py-4 mt-auto">
+          <div class="container px-5">
+            <div
+              class="row align-items-center justify-content-between flex-column flex-sm-row"
+            >
+              <div class="col-auto">
+                <div class="small m-0 text-white">
+                  Copyright &copy; Your Website 2023
+                </div>
+              </div>
+              <div class="col-auto">
+                <a class="link-light small" href="#!">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Terms</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Contact</a>
+              </div>
+            </div>
+          </div>
+        </footer>
   </body>
 </html>
