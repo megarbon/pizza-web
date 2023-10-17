@@ -20,151 +20,73 @@
 <body>
 
 
-  <!--NavBar-->
-  <!--Esta navbar tiene logo, enlaces en el centro, es sticky, busqueda y toggle en moviles-->
-  <nav class="navbar fixed-top navbar-expand-lg bg-light shadow">
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-body navbar-expand-sm sticky-top shadow">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/designs/pecora.png" alt="logo" height="50px" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
-        aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-        <div class="container align-items-center d-flex justify-content-center">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-black" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="./pages/menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="./pages/reservation.html">Reserva</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="./pages/galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="./pages/about.html">About</a>
-            </li>
-          </ul>
+        <a href="#" class="navbar-brand"><img src="/assets/designs/pecora.png" style="height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#restaurant-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-bg-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="restaurant-navbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3">
+                    <a href="#" class="nav-link text-dark">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="#specials" class="nav-link text-dark">Specials</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="#chefs" class="nav-link text-dark">Menu</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="#menus" class="nav-link text-dark">Chefs</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="#contact" class="nav-link text-dark">Contact</a>
+                </li>
+            </ul>
         </div>
-        <form class="d-flex" role="search">
-          <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search" />
-          <button class="btn btn-outline-primary" type="submit">
-            <a href="#" class="bi bi-search text-dark" id="search-icon"></a>
-          </button>
-        </form>
-      </div>
     </div>
-  </nav>
+</nav>
 
 
   <div class="hero-header position-relative overflow-hidden p-3 text-center bg-light">
     <div class="container-fluid py-5 h-100">
-        <div class="row align-items-center h-100">
-            <div class="col-lg-8 text-center text-lg-center">
-                <h1 class="display-3 text-white">The original Italian<br>Pizza.</h1>
-                <p class="text-white mb-4 pb-2">Get the best pizza in town since 1975.
-                    You can never go wrong with a mouth-watering classic Italian Pizza,
-                    taking you closer to Paris. Explore our menu ranging from different flavors.</p>
-                <a href="#" class="btn btn-primary py-sm-3 px-sm-5 me-3">Explore</a>
-            </div>
-            <div class="col-lg-4 text-center overflow-hidden">
-                <img class="bi-image-fill" src="assets/designs/pizza-no-bg.png" alt="">
-            </div>
+      <div class="row align-items-center h-100">
+        <div class="col-lg-8 text-center text-lg-center">
+          <h1 class="display-3 text-white">The original Italian<br>Pizza.</h1>
+          <p class="text-white mb-4 pb-2">Get the best pizza in town since 1975.
+            You can never go wrong with a mouth-watering classic Italian Pizza,
+            taking you closer to Paris. Explore our menu ranging from different flavors.</p>
+          <a href="#" class="btn btn-primary py-sm-3 px-sm-5 me-3">Explore</a>
         </div>
+        <div class="col-lg-4 text-center overflow-hidden">
+          <img class="bi-image-fill" src="assets/designs/pizza-no-bg.png" alt="">
+        </div>
+      </div>
     </div>
-</div>
-
-
-
-
+  </div>
 
 
 
   <!-- Page Content -->
 
-    <section class="container py-5">
-      <h2>Pizzería Menú</h2>
-      <p>¡Echa un vistazo a nuestro delicioso menú!</p>
-
-      <div class="accordion text-dark" id="menuAccordion">
-          <div class="card">
-              <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                          aria-expanded="true" aria-controls="collapseOne">
-                          Pizzas
-                      </button>
-                  </h2>
-              </div>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#menuAccordion">
-                  <div class="card-body">
-                      <ul>
-                          <li>Pizza Margherita</li>
-                          <li>Pizza Pepperoni</li>
-                          <li>Pizza Hawaiana</li>
-                          <!-- Agrega más elementos según sea necesario -->
-                      </ul>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Puedes agregar más secciones de menú aquí -->
-
-      </div>
+  <section class="container py-5 text-center">
+    <h2>Ven a vernos y probar nuestra comida</h2>
+    <p>¡Estamos en el centro de la ciudad, en los barrios y en las app de comida a domicilio!</p>
   </section>
 
 
-  <div class="container mt-4 py-4">
-    <h1 class="text-center mb-4">Menú de La Pecora Nera</h1>
-
-    <h2 id="pizzas">PIZZAS</h2>
-    <ul class="list-group my-3">
-      <li class="list-group-item">Margarita clásica - 7,00 €</li>
-      <!-- Agrega el resto de elementos de la lista de pizzas aquí -->
-    </ul>
-
-    <h2 id="entrantes">ENTRANTES</h2>
-    <ul class="list-group my-3">
-      <li class="list-group-item">Aceitunas Ascolanas - 7,00 €</li>
-      <!-- Agrega el resto de elementos de la lista de entrantes aquí -->
-    </ul>
-
-    <h2 id="bebidas">BEBIDAS</h2>
-    <ul class="list-group my-3">
-      <li class="list-group-item">Cerveza de tercio - 2,50 €</li>
-      <!-- Agrega el resto de elementos de la lista de bebidas aquí -->
-    </ul>
-
-    <h2 id="cafe">CAFÉ</h2>
-    <ul class="list-group my-3">
-      <li class="list-group-item">Espresso - 1,50 €</li>
-      <!-- Agrega el resto de elementos de la lista de café aquí -->
-    </ul>
-
-    <h2 id="dolce">DOLCE</h2>
-    <ul class="list-group my-3">
-      <li class="list-group-item">Tiramisú - 4,00 €</li>
-      <!-- Agrega el resto de elementos de la lista de postres aquí -->
-    </ul>
-  </div>
-
   <!-- Menu -->
-  <div class="container">
-    <h1 class="my-4">Menu de la pizzeria
-    </h1>
+  <div class="container text-center">
+    <h1 class="my-3 py-3">Menu</h1>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-4">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+          <a href="#"><img class="card-img-top" src="assets/entrantes/fingers.jpg" alt=""></a>
           <div class="card-body text-dark">
             <h4 class="card-title">
               <p>ENTRANTES</p>
@@ -176,7 +98,7 @@
       </div>
       <div class="col-lg-6 mb-4">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+          <a href="#"><img class="card-img-top" src="assets/pizzas/peperoni.jpg" alt=""></a>
           <div class="card-body text-dark">
             <h4 class="card-title">
               <p>PIZAS</p>
@@ -189,7 +111,7 @@
       </div>
       <div class="col-lg-6 mb-4">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+          <a href="#"><img class="card-img-top" src="assets/entrantes/drink.jpg" alt=""></a>
           <div class="card-body text-dark">
             <h4 class="card-title">
               <p>BEBIDAS</p>
@@ -201,7 +123,7 @@
       </div>
       <div class="col-lg-6 mb-4">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+          <a href="#"><img class="card-img-top" src="/assets/postres/cheesecake.jpg" alt=""></a>
           <div class="card-body text-dark">
             <h4 class="card-title">
               <p>POSTRES</p>
@@ -213,6 +135,54 @@
         </div>
       </div>
     </div>
+
+
+<!-- Chefs -->
+<section class="chefs p-5" id="chefs">
+  <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mt-5">
+          <div class="col">
+              <div class="card shadow-lg">
+                  <img src="/assets/stock/pizzaiolo2.jpg" alt="" class="card-img-top img-fluid">
+                  <div class="card-body">
+                      <p class="h4 card-title fw-bold">Michale Niwan</p>
+                      <p class="dance-font text-muted">Master Chef</p>
+                      <p class="fst-italic text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum facilis itaque
+                          iusto nemo quam rerum?</p>
+                      <div class="d-flex justify-content-around">
+                          <i class="bi-facebook text-primary fs-3"></i>
+                          <i class="bi-twitter text-info fs-3"></i>
+                          <i class="bi-youtube text-danger fs-3"></i>
+                          <i class="bi-instagram text-warning fs-3"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Repite las siguientes columnas según sea necesario -->
+          <div class="col">
+              <div class="card shadow-lg">
+                  <img src="/assets/stock/pizzaiolo2.jpg" alt="" class="card-img-top img-fluid">
+                  <div class="card-body">
+                      <p class="h4 card-title fw-bold">Michale Niwan</p>
+                      <p class="dance-font text-muted">Master Chef</p>
+                      <p class="fst-italic text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum facilis itaque
+                          iusto nemo quam rerum?</p>
+                      <div class="d-flex justify-content-around">
+                          <i class="bi-facebook text-primary fs-3"></i>
+                          <i class="bi-twitter text-info fs-3"></i>
+                          <i class="bi-youtube text-danger fs-3"></i>
+                          <i class="bi-instagram text-warning fs-3"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Añade el resto de las columnas según sea necesario -->
+      </div>
+  </div>
+</section>
+
+
+
 
     <table class="table table-striped table-hover text-dark bg-body">
       <thead>
@@ -254,7 +224,41 @@
     </table>
 
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white p-3" id="contact">
+      <div class="container-fluid">
+          <div class="row align-items-center mt-5">
+              <div class="col-md-4">
+                  <p>Copyright © 2023</p>
+                  <small class="dance-font">La Pecora Nera <br>
+                      Madrid, Madrid <br>
+                      España , 28044</small>
+              </div>
+              <div class="col-md-4 offset-md-4">
+                  <form>
+                      <div class="mb-2">
+                          <input type="text" class="form-control" placeholder="Your Name">
+                      </div>
+                      <div class="mb-2">
+                          <input type="email" class="form-control" placeholder="Your Email">
+                      </div>
+                      <div class="mb-2">
+                          <input type="number" class="form-control" placeholder="Your Mobile">
+                      </div>
+                      <div class="mb-2">
+                          <textarea rows="3" class="form-control" placeholder="Your Text"></textarea>
+                      </div>
+                      <div class="mb-2">
+                          <input type="submit" class="btn btn-warning" value="Submit">
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

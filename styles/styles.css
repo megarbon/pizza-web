@@ -40,3 +40,25 @@ h1 {
   border: none;
   color: black;
 }
+
+.card-menu{
+  max-height: 400px;
+  width: auto;
+}
+
+.card-menu:hover {
+  background-color: lightgray;
+  transform: scale(1.1);
+  /* Otros estilos de transición aquí si lo deseas */
+}
+
+
+.card {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .row-cols-2 > * {
+      flex: 0 0 100% !important;
+  }
+}
