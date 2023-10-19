@@ -80,7 +80,7 @@
     <div class="py-4"></div>
 
     <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ">
         <div class="col-10 col-sm-8 col-lg-6">
           <img
             src="/assets/stock/vertical-pizzas.jpg"
@@ -91,7 +91,7 @@
             loading="lazy"
           />
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 ">
           <h1 class="display-5 fw-bold lh-1 mb-3">Nuestro delicioso Menu</h1>
           <p class="lead">
             En nuestro menu tendras los mejores platos de la cocina italiana
@@ -109,119 +109,375 @@
             </button>
           </div>
         </div>
+        <!-- Formulario de Datos -->
+        <div class="container py-5">
+          <aside class="bg-opacity-25 bg-body rounded-3 p-4 p-sm-5 mt-5 ">
+            <div
+              class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start"
+            >
+              <div class="mb-4 mb-xl-0">
+                <div class="fs-3 fw-bold text-white">
+                  Quieres que te avisemos cuando tengamos ofertas?.
+                </div>
+                <div class="text-white-50">
+                  Dejanos tu email y te escribiremos con las promociones.
+                </div>
+              </div>
+              <div class="ms-xl-4">
+                <div class="input-group mb-2">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Email address..."
+                    aria-label="Email address..."
+                    aria-describedby="button-newsletter"
+                  />
+                  <button
+                    class="btn btn-outline-light"
+                    id="button-newsletter"
+                    type="button"
+                  >
+                    Enviar
+                  </button>
+                </div>
+                <div class="small text-white-50">
+                  No te vamos a mandar spam. Somos una pizzeria inocente.
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
       </div>
     </div>
+    <br />
 
-    <!-- Formulario de Datos -->
-    <div class="container py-5">
-      <aside class="bg-opacity-50 bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-        <div
-          class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start"
-        >
-          <div class="mb-4 mb-xl-0">
-            <div class="fs-3 fw-bold text-white">
-              Quieres que te avisemos cuando tengamos ofertas?.
+    <!-- Menu -->
+    <div class="container-menu style_featured">
+      <div class="container">
+        <div class="page-header" id="menu">
+          <h1 class="text-center text-white texto-hero">Entrantes</h1>
+          <br />
+        </div>
+        <div class="row align-items-center style_menu_item shadow rounded-2 border-3">
+          <div class="col-md-6 text-center px-5">
+            <img
+              src="/assets/entrantes/croquetas.jpg"
+              style="border-radius: 10%"
+              class="img-fluid"
+              alt="Pizza Image"
+            />
+            <br />
+          </div>
+          <div class="col-md-6">
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Croquetas</h4>
+                <hr />
+                <p>Bechamel, tomate y jamon serrano</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">10.50€</span>
+              </div>
             </div>
-            <div class="text-white-50">
-              Dejanos tu email y te escribiremos con las promociones.
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Bolas de Queso</h4>
+                <hr />
+                <p>
+                  Queso mozzarella, frito en Panko y espolvoreado de gorgonzola
+                </p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">14.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Ensalada Cesar</h4>
+                <hr />
+                <p>
+                  Lechuga, pollo empanado, queso parmesano en lascas, salsa
+                  cesar y crujiente de pan
+                </p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">18.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Ensalada Capresse</h4>
+                <hr />
+                <p>
+                  Tradicional Ensalada italiana de queso mozzarella fresco y
+                  tomate natural
+                </p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">15.50€</span>
+              </div>
             </div>
           </div>
-          <div class="ms-xl-4">
-            <div class="input-group mb-2">
+        </div>
+      </div>
+
+      <!-- Nuevo elemento del menu -->
+
+      <br /><br />
+      <div class="container">
+        <div class="page-header" id="menu">
+          <h1 class="text-center text-white texto-hero">Pizzas</h1>
+          <br />
+        </div>
+        <div class="row align-items-center px-2 style_menu_item">
+          <div class="col-md-6 order-md-last text-center">
+            <img
+              src="/assets/pizzas/pizza-8.jpg"
+              style="border-radius: 10%"
+              class="img-fluid"
+              alt="Pizza Image"
+            />
+            <br />
+          </div>
+          <div class="col-md-6 order-md-first">
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Pizza Margherita</h4>
+                <hr />
+                <p>Mozzarella, tomate y albahaca</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">10.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Pizza Pepperoni</h4>
+                <hr />
+                <p>Pepperoni, queso y salsa de tomate</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">14.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Pizza Hawaiana</h4>
+                <hr />
+                <p>Jamón, piña y queso</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">18.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Pizza Cuatro Quesos</h4>
+                <hr />
+                <p>Queso azul, mozzarella, parmesano y gorgonzola</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">15.50€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <br>
+
+      <!-- Nuevo elemento del menu -->
+
+      <div class="container">
+        <div class="page-header" id="menu"><br>
+          <h1 class="text-center text-white texto-hero">Postres</h1>
+          <br />
+        </div>
+        <div class="row align-items-center style_menu_item">
+          <div class="col-md-6 text-center px-5">
+            <img
+              src="/assets/postres/tiramisu.jpg"
+              style="border-radius: 10%"
+              class="img-fluid"
+              alt="Pizza Image"
+            />
+            <br />
+          </div>
+          <div class="col-md-6">
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Tiramisu</h4>
+                <hr />
+                <p>Bechamel, tomate y jamon serrano</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">10.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Cheesecake</h4>
+                <hr />
+                <p>
+                  Queso mozzarella, frito en Panko y espolvoreado de gorgonzola
+                </p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">14.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Helado Italiano</h4>
+                <hr />
+                <p>
+                  Lechuga, pollo empanado, queso parmesano en lascas, salsa
+                  cesar y crujiente de pan
+                </p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">18.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Fruta Fresca</h4>
+                <hr />
+                <p>
+                  Tradicional Ensalada italiana de queso mozzarella fresco y
+                  tomate natural
+                </p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">15.50€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nuevo elemento del menu -->
+
+      <br /><br />
+      <div class="container">
+        <div class="page-header" id="menu">
+          <h1 class="text-center text-white texto-hero">Bebidas</h1>
+          <br />
+        </div>
+        <div class="row align-items-center px-2 style_menu_item">
+          <div class="col-md-6 order-md-last text-center">
+            <img
+              src="/assets/entrantes/drink.jpg"
+              style="border-radius: 10%"
+              class="img-fluid"
+              alt="Pizza Image"
+            />
+            <br />
+          </div>
+          <div class="col-md-6 order-md-first">
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Martinni</h4>
+                <hr />
+                <p>Mozzarella, tomate y albahaca</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">10.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Limonccello</h4>
+                <hr />
+                <p>Pepperoni, queso y salsa de tomate</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">14.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Agua con gas</h4>
+                <hr />
+                <p>Jamón, piña y queso</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">18.50€</span>
+              </div>
+            </div>
+            <div class="row menu-dish">
+              <div class="col-8">
+                <h4>Vino de cosecha</h4>
+                <hr />
+                <p>Queso azul, mozzarella, parmesano y gorgonzola</p>
+              </div>
+              <div class="col-4 menu-price py-3">
+                <span class="price-circle text-center">15.50€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <br>
+
+    </div>
+
+    <footer class="clearfix bg-dark">
+      <div class="container text-center py-2">
+        <div class="row">
+          <div class="col-md-3">
+            <p><span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS</p>
+            <p>
+              Estamos impulsados por la frescura y calidad sin compromisos, la
+              hospitalidad cordial y una creciente lista de platos
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p><span class="bi bi-clock text-info"></span> HORARIO</p>
+
+            <p>Lun-Vie: 11am - 12pm</p>
+            <p>Sab: 11am - 21pm</p>
+            <p>Dom: Cerrado</p>
+          </div>
+          <div class="col-md-3">
+            <p><span class="bi bi-sign-intersection-fill text-info"></span> CONTACTO</p>
+            <p>54, Calle del Norte, 45086 Madrid, España</p>
+            <p>+34 123 456 789</p>
+            <p><a href="mailto:mail@example.com">correo@example.com</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span class="bi bi-envelope text-info"></span> BOLETÍN</p>
+            <div class="input-group">
               <input
-                class="form-control"
                 type="text"
-                placeholder="Email address..."
-                aria-label="Email address..."
-                aria-describedby="button-newsletter"
+                class="form-control"
+                placeholder="Ingresa tu correo electrónico..."
               />
-              <button
-                class="btn btn-outline-light"
-                id="button-newsletter"
-                type="button"
-              >
-                Enviar
-              </button>
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  Suscribirse
+                </button>
+              </span>
             </div>
-            <div class="small text-white-50">
-              No te vamos a mandar spam. Somos una pizzeria inocente.
-            </div>
-          </div>
-        </div>
-      </aside>
-    </div>
-
-    <!-- Carta -->
-    <section class="py-5">
-      <!-- 1 plato -->
-      <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
-          <div class="col-md-6">
-            <img
-              class="card-img-top mb-5 mb-md-0"
-              src="/assets/pizzas/peperoni.jpg"
-              alt="pizza1"
-            />
-          </div>
-          <div class="col-md-6">
-            <div class="small mb-1">NO-Vegan</div>
-            <h1 class="display-5 fw-bolder">Pizza Peperoni</h1>
-            <div class="fs-5 mb-5">
-              <span>10.00€</span>
-            </div>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium at dolorem quidem modi. Nam sequi consequatur
-              obcaecati excepturi alias magni, accusamus eius blanditiis
-              delectus ipsam minima ea iste laborum vero?
+            <p>
+              <a
+                class="bi bi-twitter footer-socialicon"
+                target="_blank"
+                href="https://twitter.com/"
+              ></a>
+              <a
+                class="bi bi-facebook footer-socialicon"
+                target="_blank"
+                href="https://www.facebook.com/"
+              ></a>
+              <a
+                class="bi bi-google footer-socialicon"
+                target="_blank"
+                href="https://plus.google.com/"
+              ></a>
+              <a
+                class="bi bi-linkedin footer-socialicon"
+                target="_blank"
+                href="https://plus.google.com/"
+              ></a>
             </p>
-          </div>
-        </div>
-      </div>
-      <!-- 1 plato -->
-      <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
-          <div class="col-md-6">
-            <img
-              class="card-img-top mb-5 mb-md-0"
-              src="/assets/pizzas/peperoni.jpg"
-              alt="pizza1"
-            />
-          </div>
-          <div class="col-md-6">
-            <div class="small mb-1">NO-Vegan</div>
-            <h1 class="display-5 fw-bolder">Pizza Peperoni</h1>
-            <div class="fs-5 mb-5">
-              <span>10.00€</span>
-            </div>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium at dolorem quidem modi. Nam sequi consequatur
-              obcaecati excepturi alias magni, accusamus eius blanditiis
-              delectus ipsam minima ea iste laborum vero?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer-->
-    <footer class="bg-opacity-75 footer-comun rounded-3 py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0 text-white">
-              Copyright &copy; Your Website 2023
-            </div>
-          </div>
-          <div class="col-auto">
-            <a class="link-light small" href="#!">Privacy</a>
-            <span class="text-white mx-1">&middot;</span>
-            <a class="link-light small" href="#!">Terms</a>
-            <span class="text-white mx-1">&middot;</span>
-            <a class="link-light small" href="#!">Contact</a>
           </div>
         </div>
       </div>

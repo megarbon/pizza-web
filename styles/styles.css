@@ -9,16 +9,18 @@ body {
   color: white;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
-h1, h2, h3{
-  font-family: 'IBM Plex Mono', monospace;
+h1,
+h2,
+h3 {
+  font-family: "IBM Plex Mono", monospace;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 
-p{
-  font-family: 'Tilt Neon', sans-serif;
+p {
+  font-family: "Tilt Neon", sans-serif;
   line-height: 25px;
 }
 
@@ -31,7 +33,6 @@ p{
   line-height: 1.2; /* Altura de línea para mejorar la legibilidad */
 }
 
-
 .hero-header {
   background: linear-gradient(rgba(15, 23, 43, 0.5), rgba(15, 23, 43, 0.9)),
     url(/assets/stock/header2.jpg);
@@ -40,28 +41,13 @@ p{
   background-size: cover;
 }
 
-.hero-header .row {
-  height: 100%;
-}
-
-.hero-header .col-lg-8 {
-  padding: 0;
-}
-
-.hero-header .col-lg-4 img {
-  width: 100%;
-  position: relative;
-  left: 50%;
-}
-
 .btn-primary {
   background-color: #ffc30b;
   border: none;
   color: black;
 }
 
-
-.navegacion{
+.navegacion {
   background: rgb(3, 29, 21);
   background: linear-gradient(
     90deg,
@@ -72,7 +58,7 @@ p{
   color: white;
 }
 
-.footer-comun{
+.footer-comun {
   background: rgb(3, 29, 21);
   background: linear-gradient(
     90deg,
@@ -81,4 +67,40 @@ p{
     rgb(0, 64, 59) 100%
   );
   color: white;
+}
+
+.style_featured {
+  padding: 20px 0;
+  text-align: center;
+}
+.style_featured > div > div {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.style_featured > div:hover > div {
+  margin-top: +19px;
+  border: 1px solid rgb(164, 250, 153);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
+  background: rgba(153, 200, 250, 0.1);
+  transition: 1s;
+}
+
+.style_menu_item > div > div{
+  margin-top: +19px;
+  border: 1px solid rgb(194, 255, 183);
+  background: rgba(153, 200, 250, 0.1);
+  border-radius: 10px;
+}
+
+.container-menu .price-circle {
+	width: 64px;
+	height: 64px;
+	line-height: 64px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #054732;
+	vertical-align: middle;
+	display: inline-block;
 }
