@@ -23,32 +23,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/styles/styles.css" />
-
-    <style>
-      .login {
-        min-height: 100vh;
-      }
-
-      .bg-image {
-        background-image: url(/assets/stock/vertical-pizzas.jpg);
-        background-size: cover;
-        background-position: center;
-      }
-
-      .login-heading {
-        font-weight: 300;
-      }
-
-      .btn-login {
-        font-size: 0.9rem;
-        letter-spacing: 0.05rem;
-        padding: 0.75rem 1rem;
-      }
-    </style>
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navegacion shadow">
+    <nav class="navbar fixed-top navbar-expand-lg navegacion shadow py-0">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="/assets/designs/pecora.png" alt="logo" height="50px" />
@@ -97,18 +75,18 @@
 
     <div class="py-1"></div>
 
-    <div class="container-fluid ps-md-0">
-      <div class="row g-0">
+    <div class="container-fluid">
+      <div class="row">
         <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
         <div class="col-md-8 col-lg-6">
-          <div class="login d-flex align-items-center py-5">
+          <div class="login d-flex align-items-center py-2">
             <div class="container">
               <div class="row">
                 <div class="col-md-9 col-lg-8 mx-auto">
                   <div class="container text-center">
                     <img
                       src="/assets/designs/pecora.png"
-                      style="height: 300px"
+                      style="height: 200px"
                     />
                   </div>
                   
@@ -173,22 +151,48 @@
     </div>
 
         <!-- Footer-->
-        <footer class="bg-opacity-50 footer-comun rounded-3 py-4 mt-auto">
-          <div class="container px-5">
-            <div
-              class="row align-items-center justify-content-between flex-column flex-sm-row"
-            >
-              <div class="col-auto">
-                <div class="small m-0 text-white">
-                  Copyright &copy; Your Website 2023
-                </div>
+        <footer class="clearfix bg-dark">
+          <div class="container text-center py-2">
+            <div class="row">
+              <div class="col-md-3">
+                <p><span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS</p>
+                <p>
+                  Estamos impulsados por la frescura y calidad sin compromisos, la
+                  hospitalidad cordial y una creciente lista de platos
+                </p>
               </div>
-              <div class="col-auto">
-                <a class="link-light small" href="#!">Privacy</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Terms</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Contact</a>
+              <div class="col-md-3">
+                <p><span class="bi bi-clock text-info"></span> HORARIO</p>
+      
+                <p>Lun-Vie: 11am - 12pm</p>
+                <p>Sab: 11am - 21pm</p>
+                <p>Dom: Cerrado</p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <span class="bi bi-sign-intersection-fill text-info"></span>
+                  CONTACTO
+                </p>
+                <p>54, Calle del Norte, 45086 Madrid, España</p>
+                <p>+34 123 456 789</p>
+                <p><a href="mailto:mail@example.com">info@pecora.com</a></p>
+              </div>
+              <div class="col-md-3">
+                <p><span class="bi bi-envelope text-info"></span> BOLETÍN</p>
+                <div class="input-group">
+                  <input type="text" class="form-control m-1 py-1" placeholder="Correo electrónico..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">
+                      Suscribirse
+                    </button>
+                  </span>
+                </div>
+                <p>
+                  <a class="bi bi-twitter footer-socialicon" target="_blank" href="https://twitter.com/"></a>
+                  <a class="bi bi-facebook footer-socialicon" target="_blank" href="https://www.facebook.com/"></a>
+                  <a class="bi bi-google footer-socialicon" target="_blank" href="https://www.google.com/"></a>
+                  <a class="bi bi-linkedin footer-socialicon" target="_blank" href="https://www.linkedin.com/"></a>
+                </p>
               </div>
             </div>
           </div>
