@@ -5,7 +5,7 @@ body {
   background: rgb(3, 29, 21);
   background: linear-gradient(
     90deg,
-    rgba(3, 29, 21, 1) 0%,
+    rgb(5, 64, 46) 0%,
     rgba(0, 98, 65, 1) 50%,
     rgba(0, 99, 92, 1) 100%
   );
@@ -29,7 +29,7 @@ p {
 
 
 .texto-hero {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 600;
   color: #ffffff; /* Color personalizado */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra del texto */
@@ -128,4 +128,38 @@ p {
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
   padding: 0.75rem 1rem;
+}
+
+
+/* Tabla principal */
+.table-pizzeria {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Encabezado de la tabla */
+.table-pizzeria th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Celdas de la tabla */
+.table-pizzeria td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Estilo de fila alterno */
+.table-pizzeria tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilo de fila al pasar el ratón */
+.table-pizzeria tr:hover {
+  background-color: #ddd;
 }
