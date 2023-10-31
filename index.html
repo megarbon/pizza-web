@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>La Pecora Nera</title>
+		<title>La Pecora</title>
 		<!-- Bootstrap icons-->
 		<link
 			rel="stylesheet"
@@ -20,6 +20,10 @@
 			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 			crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="/styles/styles.css" />
+		<link
+			rel="icon"
+			href="../assets/designs/logotipo-pecora.png"
+			type="image/x-icon" />
 	</head>
 
 	<body>
@@ -65,6 +69,43 @@
 							<a href="/pages/about.html" class="nav-link text-light"
 								>Contacto</a
 							>
+						</li>
+						<li class="nav-item dropdown px-3">
+							<a
+								class="nav-link dropdown-toggle text-white"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<i class="bi bi-brightness-high"></i>
+							</a>
+							<ul
+								class="dropdown-menu dropdown-menu-sm"
+								aria-labelledby="navbarDropdownMenu">
+								<li>
+									<a class="dropdown-item" href="#" onclick="setLightMode()">
+										<i class="bi bi-sun"></i> Modo Claro
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#" onclick="setDarkMode()">
+										<i class="bi bi-moon"></i> Modo Oscuro
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item px-3">
+							<form class="d-flex">
+								<input
+									class="form-control me-2"
+									type="search"
+									placeholder="Search"
+									aria-label="Search" />
+								<button class="btn btn-outline-success" type="submit">
+									Search
+								</button>
+							</form>
 						</li>
 					</ul>
 				</div>
