@@ -1,551 +1,524 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Pecora Nera</title>
-    <!-- Bootstrap icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <!-- Bootstrap CSS-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/styles/styles.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>La Pecora Nera</title>
+		<!-- Bootstrap icons-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+		<!-- Bootstrap CSS-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous" />
+		<!-- Bootstrap JS-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/styles/styles.css" />
+	</head>
 
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navegacion shadow">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/assets/designs/logotipo-pecora.png"
-            alt="logo"
-            height="50px"
-          />
-        </a>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navegacion shadow">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img
+						src="/assets/designs/logotipo-pecora.png"
+						alt="logo"
+						height="50px" />
+				</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#restaurant-navbar"
-          aria-controls="restaurant-navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#restaurant-navbar"
+					aria-controls="restaurant-navbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="restaurant-navbar"
-        >
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item px-3">
-              <a href="#" class="nav-link text-light">Inicio</a>
-            </li>
-            <li class="nav-item px-3">
-              <a href="#Recomendaciones" class="nav-link text-light"
-                >Recomendado</a
-              >
-            </li>
-            <li class="nav-item px-3">
-              <a href="#chefs" class="nav-link text-light">Chefs</a>
-            </li>
-            <li class="nav-item px-3">
-              <a href="/pages/menu.html" class="nav-link text-light">Carta</a>
-            </li>
-            <li class="nav-item px-3">
-              <a href="/pages/about.html" class="nav-link text-light"
-                >Contacto</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+				<div
+					class="collapse navbar-collapse justify-content-between"
+					id="restaurant-navbar">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item px-3">
+							<a href="#" class="nav-link text-light">Inicio</a>
+						</li>
+						<li class="nav-item px-3">
+							<a href="#Recomendaciones" class="nav-link text-light"
+								>Recomendado</a
+							>
+						</li>
+						<li class="nav-item px-3">
+							<a href="#opinion" class="nav-link text-light">Opiniones</a>
+						</li>
+						<li class="nav-item px-3">
+							<a href="/pages/menu.html" class="nav-link text-light">Carta</a>
+						</li>
+						<li class="nav-item px-3">
+							<a href="/pages/about.html" class="nav-link text-light"
+								>Contacto</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-    <div class="py-4"></div>
+		<div class="py-4"></div>
 
-    <div class="hero-header overflow-hidden text-center mt-4 vw-100">
-      <div
-        class="container-fluid py-5 h-100 d-flex align-items-center justify-content-center"
-      >
-        <div class="row align-items-center">
-          <div class="col-lg-12 text-center text-lg-center">
-            <h1 class="texto-hero my-4">La Pecora</h1>
-            <div>‎<br /></div>
-            <p class="text-white mb-4 mx-4 pb-4">
-              Consigue la mejor pizza de la ciudad desde 1975. Nunca te
-              equivocarás con una deliciosa y clásica pizza italiana que te
-              transportará más cerca de Madrid. Explora nuestro menú que abarca
-              diferentes sabores.
-            </p>
-            <a
-              href="/pages/menu.html#menu"
-              class="btn btn-primary py-sm-3 px-sm-5 me-3"
-              >Descúbrenos!</a
-            >
-            <div>‎<br /></div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="hero-header overflow-hidden text-center mt-4 vw-100">
+			<div
+				class="container-fluid py-5 h-100 d-flex align-items-center justify-content-center">
+				<div class="row align-items-center">
+					<div class="col-lg-12 text-center text-lg-center">
+						<h1 class="texto-hero my-4">La Pecora</h1>
+						<div>‎<br /></div>
+						<p class="text-white mb-4 mx-4 pb-4">
+							Consigue la mejor pizza de la ciudad desde 1975. Nunca te
+							equivocarás con una deliciosa y clásica pizza italiana que te
+							transportará más cerca de Madrid. Explora nuestro menú que abarca
+							diferentes sabores.
+						</p>
+						<a
+							href="/pages/menu.html#menu"
+							class="btn btn-primary py-sm-3 px-sm-5 me-3"
+							>Descúbrenos!</a
+						>
+						<div>‎<br /></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- servicios -->
-    <div class="container mt-5">
-      <div class="page-header" id="services">
-        <h1 class="text-center text-default py-5">Nuestros Servicios</h1>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-6 col-lg-3">
-          <span class="bi bi-calendar2-date fs-1"></span>
-          <h3 class="text-warning">Horario Flexible</h3>
-          <p>
-            Ofrecemos un horario flexible para adaptarnos a tus necesidades.
-          </p>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <span class="bi bi-truck fs-1"></span>
-          <h3 class="text-warning">Entrega Rápida</h3>
-          <p>Realizamos entregas a domicilio de manera rápida y eficiente.</p>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <span class="bi bi-car-front fs-1"></span>
-          <h3 class="text-warning">Aparcamiento Fácil</h3>
-          <p>Ofrecemos aparcamiento gratuito para todos nuestros clientes.</p>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <span class="bi bi-award fs-1"></span>
-          <h3 class="text-warning">Excelente Calidad</h3>
-          <p>
-            Nos esforzamos por ofrecer la mejor calidad en nuestros productos.
-          </p>
-        </div>
-      </div>
-    </div>
+		<!-- servicios -->
+		<div class="container mt-5">
+			<div class="page-header" id="services">
+				<h1 class="text-center text-default py-5">Nuestros Servicios</h1>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 col-lg-3">
+					<span class="bi bi-calendar2-date fs-1"></span>
+					<h3 class="text-warning">Horario Flexible</h3>
+					<p>
+						Ofrecemos un horario flexible para adaptarnos a tus necesidades.
+					</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<span class="bi bi-truck fs-1"></span>
+					<h3 class="text-warning">Entrega Rápida</h3>
+					<p>Realizamos entregas a domicilio de manera rápida y eficiente.</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<span class="bi bi-car-front fs-1"></span>
+					<h3 class="text-warning">Aparcamiento Fácil</h3>
+					<p>Ofrecemos aparcamiento gratuito para todos nuestros clientes.</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<span class="bi bi-award fs-1"></span>
+					<h3 class="text-warning">Excelente Calidad</h3>
+					<p>
+						Nos esforzamos por ofrecer la mejor calidad en nuestros productos.
+					</p>
+				</div>
+			</div>
+		</div>
 
-    <!-- Seccion de Recomendaciones -->
-    <div class="container text-center" id="Recomendaciones">
-      <div>‎</div>
-      <h1 class="my-3 py-3">Recomendaciones</h1>
-    </div>
+		<!-- Seccion de Recomendaciones -->
+		<div class="container text-center" id="Recomendaciones">
+			<div>‎</div>
+			<h1 class="my-3 py-3">Recomendaciones</h1>
+		</div>
 
-    <div class="container">
-      <div class="row style_featured">
-        <div class="col-md-4">
-          <div>
-            <img
-              src="/assets/pizzas/pizza-vegetal-fake.jpeg"
-              alt=""
-              class="img-fluid rounded img-thumbnail"
-              style="width: 100%; height: auto"
-            />
-            <h2>Vegettale 777</h2>
-            <p>
-              <i class="bi bi-info-circle"></i>
-              Esta deliciosa pizza tiene champiñones y otros ingredientes
-              exquisitos.
-            </p>
-            <p>
-              <i class="bi bi-egg-fill"></i>
-              Contiene gluten, lácteos y carne.
-            </p>
-            <p>
-              <i class="bi bi-heart-fill"></i>
-              Tipo: Vegana
-            </p>
-            <a href="#" class="btn btn-success" title="More">Probar »</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <img
-              src="/assets/pizzas/pizza-4quesos-fake.jpeg"
-              alt=""
-              class="img-fluid rounded img-thumbnail"
-              style="width: 100%; height: auto"
-            />
-            <h2>4 Quesos</h2>
-            <p>
-              <i class="bi bi-info-circle"></i>
-              Esta deliciosa pizza tiene una mezcla de cuatro quesos exquisitos.
-            </p>
-            <p>
-              <i class="bi bi-egg-fill"></i>
-              Contiene gluten y lácteos.
-            </p>
-            <p>
-              <i class="bi bi-heart-fill"></i>
-              Tipo: Vegetariana
-            </p>
-            <a href="#" class="btn btn-success" title="More">Probar »</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <img
-              src="/assets/pizzas/peperoni-fake.jpeg"
-              alt=""
-              class="img-fluid rounded img-thumbnail"
-              style="width: 100%; height: auto"
-            />
-            <h2>Inferno 666</h2>
-            <p>
-              <i class="bi bi-info-circle"></i>
-              Esta deliciosa pizza tiene chorizo y otros ingredientes
-              exquisitos.
-            </p>
-            <p>
-              <i class="bi bi-egg-fill"></i>
-              Masa sin gluten, contiene lácteos y carne.
-            </p>
-            <p>
-              <i class="bi bi-heart-fill"></i>
-              Tipo: Carnívora
-            </p>
-            <a href="#" class="btn btn-success" title="More">Probar »</a>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="container">
+			<div class="row style_featured">
+				<div class="col-md-4">
+					<div>
+						<img
+							src="/assets/pizzas/pizza-vegetal-fake.jpeg"
+							alt=""
+							class="img-fluid rounded img-thumbnail"
+							style="width: 100%; height: auto" />
+						<h2>Vegettale 777</h2>
+						<p>
+							<i class="bi bi-info-circle"></i>
+							Esta deliciosa pizza tiene champiñones y otros ingredientes
+							exquisitos.
+						</p>
+						<p>
+							<i class="bi bi-egg-fill"></i>
+							Contiene gluten, lácteos y carne.
+						</p>
+						<p>
+							<i class="bi bi-heart-fill"></i>
+							Tipo: Vegana
+						</p>
+						<a href="#" class="btn btn-success" title="More">Probar »</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div>
+						<img
+							src="/assets/pizzas/pizza-4quesos-fake.jpeg"
+							alt=""
+							class="img-fluid rounded img-thumbnail"
+							style="width: 100%; height: auto" />
+						<h2>4 Quesos</h2>
+						<p>
+							<i class="bi bi-info-circle"></i>
+							Esta deliciosa pizza tiene una mezcla de cuatro quesos exquisitos.
+						</p>
+						<p>
+							<i class="bi bi-egg-fill"></i>
+							Contiene gluten y lácteos.
+						</p>
+						<p>
+							<i class="bi bi-heart-fill"></i>
+							Tipo: Vegetariana
+						</p>
+						<a href="#" class="btn btn-success" title="More">Probar »</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div>
+						<img
+							src="/assets/pizzas/peperoni-fake.jpeg"
+							alt=""
+							class="img-fluid rounded img-thumbnail"
+							style="width: 100%; height: auto" />
+						<h2>Inferno 666</h2>
+						<p>
+							<i class="bi bi-info-circle"></i>
+							Esta deliciosa pizza tiene chorizo y otros ingredientes
+							exquisitos.
+						</p>
+						<p>
+							<i class="bi bi-egg-fill"></i>
+							Masa sin gluten, contiene lácteos y carne.
+						</p>
+						<p>
+							<i class="bi bi-heart-fill"></i>
+							Tipo: Carnívora
+						</p>
+						<a href="#" class="btn btn-success" title="More">Probar »</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Seccion de entrega a domicilio -->
+		<!-- Seccion de entrega a domicilio -->
 
-    <section class="container py-5 text-center">
-      <h2>Disfruta de nuestros deliciosos platos en casa</h2>
-      <p>
-        Ubicados en el corazón de la ciudad, también estamos disponibles en las
-        siguientes plataformas de entrega a domicilio:
-      </p>
-      <div class="row justify-content-center align-items-center my-4">
-        <div class="col-6 col-md-3 text-center">
-          <img
-            src="/assets/logos/uber-eats.png"
-            alt="Uber Eats"
-            class="img-fluid"
-            style="max-width: 100%; height: auto"
-          />
-        </div>
-        <div class="col-6 col-md-3 text-center">
-          <img
-            src="/assets/logos/just-eat.png"
-            alt="Just Eat"
-            class="img-fluid"
-            style="max-width: 100%; height: auto"
-          />
-        </div>
-      </div>
-      <p>
-        No importa dónde te encuentres, puedes disfrutar de la auténtica
-        frescura de nuestros platillos desde la comodidad de tu hogar. ¡Realiza
-        tu pedido ahora y déjanos llevarte una experiencia culinaria
-        inolvidable!
-      </p>
-      <p>
-        ¡También puedes visitarnos en nuestro restaurante para disfrutar de un
-        ambiente acogedor y auténtico!
-      </p>
-    </section>
+		<section class="container py-5 text-center">
+			<h2>Disfruta de nuestros deliciosos platos en casa</h2>
+			<p>
+				Ubicados en el corazón de la ciudad, también estamos disponibles en las
+				siguientes plataformas de entrega a domicilio:
+			</p>
+			<div class="row justify-content-center align-items-center my-4">
+				<div class="col-6 col-md-3 text-center">
+					<img
+						src="/assets/logos/uber-eats.png"
+						alt="Uber Eats"
+						class="img-fluid"
+						style="max-width: 100%; height: auto" />
+				</div>
+				<div class="col-6 col-md-3 text-center">
+					<img
+						src="/assets/logos/just-eat.png"
+						alt="Just Eat"
+						class="img-fluid"
+						style="max-width: 100%; height: auto" />
+				</div>
+			</div>
+			<p>
+				No importa dónde te encuentres, puedes disfrutar de la auténtica
+				frescura de nuestros platillos desde la comodidad de tu hogar. ¡Realiza
+				tu pedido ahora y déjanos llevarte una experiencia culinaria
+				inolvidable!
+			</p>
+			<p>
+				¡También puedes visitarnos en nuestro restaurante para disfrutar de un
+				ambiente acogedor y auténtico!
+			</p>
+		</section>
 
-    <div class="container-fluid">
-      <div class="container">
-        <div class="m-3" id="about">
-          <h1 class="text-center text-white">Reviews</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <p>"Me han pagado para escribir esto"</p>
-            <p>-Emilio Cherto</p>
-            <div class="d-flex justify-content-center">
-              <img
-                src="/assets/people/elmo.jpg"
-                class="img-fluid rounded-circle"
-                style="width: 200px; height: 180px"
-                alt="Avatar"
-              />
-            </div>
-            <br />
-            <p class="text-warning">
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-half"></span>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p>"Me sirvieron tremenda ensalada de puños"</p>
-            <p>-Guillermo Diaz</p>
-            <div class="d-flex justify-content-center">
-              <img
-                src="/assets/people/willy.jpeg"
-                class="img-fluid rounded-circle"
-                style="width: 200px; height: 180px"
-                alt="Avatar"
-              />
-            </div>
-            <br />
-            <p class="text-warning">
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p>"Buenisimo lugar, lo mejor el mascarpone"</p>
-            <p>-Samuel de Luque</p>
-            <div class="d-flex justify-content-center">
-              <img
-                src="/assets/people/vegetta777.jpg"
-                class="img-fluid rounded-circle"
-                style="width: 200px; height: 180px"
-                alt="Avatar"
-              />
-            </div>
-            <br />
-            <p class="text-warning">
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-fill"></span>
-              <span class="bi bi-star-half"></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="container-fluid" id="opinion">
+			<div class="container">
+				<div class="m-3">
+					<h1 class="text-center text-white">Opiniones</h1>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<p>"Me han pagado para escribir esto"</p>
+						<p>-Emilio Cherto</p>
+						<div class="d-flex justify-content-center">
+							<img
+								src="/assets/people/elmo.jpg"
+								class="img-fluid rounded-circle"
+								style="width: 200px; height: 180px"
+								alt="Avatar" />
+						</div>
+						<br />
+						<p class="text-warning">
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-half"></span>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<p>"Me sirvieron tremenda ensalada de puños"</p>
+						<p>-Guillermo Diaz</p>
+						<div class="d-flex justify-content-center">
+							<img
+								src="/assets/people/willy.jpeg"
+								class="img-fluid rounded-circle"
+								style="width: 200px; height: 180px"
+								alt="Avatar" />
+						</div>
+						<br />
+						<p class="text-warning">
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<p>"Buenisimo lugar, lo mejor el mascarpone"</p>
+						<p>-Samuel de Luque</p>
+						<div class="d-flex justify-content-center">
+							<img
+								src="/assets/people/vegetta777.jpg"
+								class="img-fluid rounded-circle"
+								style="width: 200px; height: 180px"
+								alt="Avatar" />
+						</div>
+						<br />
+						<p class="text-warning">
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-fill"></span>
+							<span class="bi bi-star-half"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="table-responsive w-50 mx-auto rounded-2 py-4">
-      <h2 class="text-center py-2">Horario</h2>
-      <table class="table table-striped table-hover text-dark bg-body">
-        <thead>
-          <tr>
-            <th scope="col">Día</th>
-            <th scope="col">Horario</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Lunes</th>
-            <td>11:00 - 22:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Martes</th>
-            <td>11:00 - 22:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Miércoles</th>
-            <td>11:00 - 22:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Jueves</th>
-            <td>11:00 - 22:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Viernes</th>
-            <td>11:00 - 23:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Sábado</th>
-            <td>11:00 - 21:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Domingo</th>
-            <td>Cerrado</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+		<div class="table-responsive w-50 mx-auto rounded-2 py-4">
+			<h2 class="text-center py-2">Horario</h2>
+			<table class="table table-striped table-hover text-dark bg-body">
+				<thead>
+					<tr>
+						<th scope="col">Día</th>
+						<th scope="col">Horario</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Lunes</th>
+						<td>11:00 - 22:00</td>
+					</tr>
+					<tr>
+						<th scope="row">Martes</th>
+						<td>11:00 - 22:00</td>
+					</tr>
+					<tr>
+						<th scope="row">Miércoles</th>
+						<td>11:00 - 22:00</td>
+					</tr>
+					<tr>
+						<th scope="row">Jueves</th>
+						<td>11:00 - 22:00</td>
+					</tr>
+					<tr>
+						<th scope="row">Viernes</th>
+						<td>11:00 - 23:00</td>
+					</tr>
+					<tr>
+						<th scope="row">Sábado</th>
+						<td>11:00 - 21:00</td>
+					</tr>
+					<tr>
+						<th scope="row">Domingo</th>
+						<td>Cerrado</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
-    <div class="container py-4">
-      <div class="page-header text-center" id="news">
-        <h1 class="text-white">Noticias y Eventos</h1>
-      </div>
-      <div class="row py-4">
-        <div class="col-md-8">
-          <div class="accordion" id="newsAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Apertura Tienda Lago
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#newsAccordion"
-              >
-                <div class="accordion-body">
-                  <p>Sábado, 3 de Octubre</p>
-                  <p>
-                    ¡Hemos abierto una nueva tienda en el Lago! Ven y celebra
-                    con nosotros.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Fiesta de Halloween
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#newsAccordion"
-              >
-                <div class="accordion-body">
-                  <p>Sábado, 31 de Octubre</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Dia de todos los santos
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#newsAccordion"
-              >
-                <div class="accordion-body">
-                  <p>Domingo, 1 de Noviembre</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <h3>Descargar Menú</h3>
-          <div id="qrcode" class="qrcode">
-            <img
-              src="/assets/designs/qrcode.png"
-              class="py-2 m-2 img-fluid"
-              style="height: 200px"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="container py-4">
+			<div class="page-header text-center" id="news">
+				<h1 class="text-white">Noticias y Eventos</h1>
+			</div>
+			<div class="row py-4">
+				<div class="col-md-8">
+					<div class="accordion" id="newsAccordion">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button
+									class="accordion-button"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseOne"
+									aria-expanded="true"
+									aria-controls="collapseOne">
+									Apertura Tienda Lago
+								</button>
+							</h2>
+							<div
+								id="collapseOne"
+								class="accordion-collapse collapse show"
+								aria-labelledby="headingOne"
+								data-bs-parent="#newsAccordion">
+								<div class="accordion-body">
+									<p>Sábado, 3 de Octubre</p>
+									<p>
+										¡Hemos abierto una nueva tienda en el Lago! Ven y celebra
+										con nosotros.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo"
+									aria-expanded="false"
+									aria-controls="collapseTwo">
+									Fiesta de Halloween
+								</button>
+							</h2>
+							<div
+								id="collapseTwo"
+								class="accordion-collapse collapse"
+								aria-labelledby="headingTwo"
+								data-bs-parent="#newsAccordion">
+								<div class="accordion-body">
+									<p>Sábado, 31 de Octubre</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+										natoque penatibus et magnis dis parturient montes, nascetur
+										ridiculus mus.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree">
+									Dia de todos los santos
+								</button>
+							</h2>
+							<div
+								id="collapseThree"
+								class="accordion-collapse collapse"
+								aria-labelledby="headingThree"
+								data-bs-parent="#newsAccordion">
+								<div class="accordion-body">
+									<p>Domingo, 1 de Noviembre</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+										natoque penatibus et magnis dis parturient montes, nascetur
+										ridiculus mus.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<h3>Descargar Menú</h3>
+					<div id="qrcode" class="qrcode">
+						<img
+							src="/assets/designs/qrcode.png"
+							class="py-2 m-2 img-fluid"
+							style="height: 200px" />
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Footer-->
-    <footer class="clearfix bg-dark">
-      <div class="container text-center py-2">
-        <div class="row">
-          <div class="col-md-3 d-none d-md-block">
-            <p><span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS</p>
-            <p>
-              Estamos impulsados por la frescura y calidad sin compromisos, la
-              hospitalidad cordial y una creciente lista de platos
-            </p>
-          </div>
-          <div class="col-md-3 d-none d-md-block">
-            <p><span class="bi bi-clock text-info"></span> HORARIO</p>
+		<!-- Footer-->
+		<footer class="clearfix bg-dark">
+			<div class="container text-center py-2">
+				<div class="row">
+					<div class="col-md-3 d-none d-md-block">
+						<p><span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS</p>
+						<p>
+							Estamos impulsados por la frescura y calidad sin compromisos, la
+							hospitalidad cordial y una creciente lista de platos
+						</p>
+					</div>
+					<div class="col-md-3 d-none d-md-block">
+						<p><span class="bi bi-clock text-info"></span> HORARIO</p>
 
-            <p>Lun-Vie: 11am - 12pm</p>
-            <p>Sab: 11am - 21pm</p>
-            <p>Dom: Cerrado</p>
-          </div>
-          <div class="col-md-3">
-            <p>
-              <span class="bi bi-sign-intersection-fill text-info"></span>
-              CONTACTO
-            </p>
-            <p>54, Calle del Norte, 45086 Madrid, España</p>
-            <p>+34 123 456 789</p>
-            <p><a href="mailto:mail@example.com">info@pecora.com</a></p>
-          </div>
-          <div class="col-md-3">
-            <p><span class="bi bi-envelope text-info"></span> BOLETÍN</p>
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control m-1 py-1"
-                placeholder="Correo electrónico..."
-              />
-              <span class="input-group-btn">
-                <button class="btn btn-primary" type="button">
-                  Suscribirse
-                </button>
-              </span>
-            </div>
-            <p>
-              <a
-                class="bi bi-twitter footer-socialicon"
-                target="_blank"
-                href="https://twitter.com/"
-              ></a>
-              <a
-                class="bi bi-facebook footer-socialicon"
-                target="_blank"
-                href="https://www.facebook.com/"
-              ></a>
-              <a
-                class="bi bi-google footer-socialicon"
-                target="_blank"
-                href="https://www.google.com/"
-              ></a>
-              <a
-                class="bi bi-linkedin footer-socialicon"
-                target="_blank"
-                href="https://www.linkedin.com/"
-              ></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+						<p>Lun-Vie: 11am - 12pm</p>
+						<p>Sab: 11am - 21pm</p>
+						<p>Dom: Cerrado</p>
+					</div>
+					<div class="col-md-3">
+						<p>
+							<span class="bi bi-sign-intersection-fill text-info"></span>
+							CONTACTO
+						</p>
+						<p>54, Calle del Norte, 45086 Madrid, España</p>
+						<p>+34 123 456 789</p>
+						<p><a href="mailto:mail@example.com">info@pecora.com</a></p>
+					</div>
+					<div class="col-md-3">
+						<p><span class="bi bi-envelope text-info"></span> BOLETÍN</p>
+						<div class="input-group">
+							<input
+								type="text"
+								class="form-control m-1 py-1"
+								placeholder="Correo electrónico..." />
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button">
+									Suscribirse
+								</button>
+							</span>
+						</div>
+						<p>
+							<a
+								class="bi bi-twitter footer-socialicon"
+								target="_blank"
+								href="https://twitter.com/"></a>
+							<a
+								class="bi bi-facebook footer-socialicon"
+								target="_blank"
+								href="https://www.facebook.com/"></a>
+							<a
+								class="bi bi-google footer-socialicon"
+								target="_blank"
+								href="https://www.google.com/"></a>
+							<a
+								class="bi bi-linkedin footer-socialicon"
+								target="_blank"
+								href="https://www.linkedin.com/"></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
