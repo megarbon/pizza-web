@@ -115,7 +115,7 @@ body {
 }
 .style_featured > div:hover > div {
 	margin-top: +19px;
-	border: 1px solid rgb(164, 250, 153);
+	border: 1px solid rgb(202, 249, 196);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
 	background: rgba(153, 200, 250, 0.1);
 	transition: 1s;
