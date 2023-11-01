@@ -133,4 +133,6 @@ La sección de "Novedades y Eventos" en la página web proporciona a los visitan
 - La estructura de la sección se compone de una fila (`row`) que alberga dos columnas: una columna más grande (`col-md-8`) y una columna más pequeña (`col-md-4`).
 - La columna más grande contiene un componente de acordeón (`accordion`), que se implementa utilizando la clase correspondiente de Bootstrap. Este componente permite desplegar información detallada sobre cada evento, lo que permite a los visitantes obtener más detalles con solo un clic.
 - La columna más pequeña presenta un código QR que permite a los clientes acceder de manera rápida y sencilla al menú especial del restaurante. El código QR se visualiza de manera atractiva utilizando la clase `img-fluid` y un estilo específico de altura para mantener una presentación equilibrada.
-- Aunque pueda parecer que no, realmente el QR si que está centrado.
+- Aunque pueda parecer que no, realmente el QR está centrado y es funcional.
+
+Finalmente en esta página solo queda el footer del cual ya hemos hablado al principio.
