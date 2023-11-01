@@ -22,7 +22,10 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 			crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="/styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="/styles/custom.css" />
 		<link
 			rel="icon"
 			href="../assets/designs/logotipo-pecora.png"
@@ -89,12 +92,12 @@
 								class="dropdown-menu dropdown-menu-sm"
 								aria-labelledby="navbarDropdownMenu">
 								<li>
-									<a class="dropdown-item" href="#" onclick="setLightMode()">
+									<a class="dropdown-item" href="#">
 										<i class="bi bi-sun"></i> Modo Claro
 									</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="#" onclick="setDarkMode()">
+									<a class="dropdown-item" href="#">
 										<i class="bi bi-moon"></i> Modo Oscuro
 									</a>
 								</li>
@@ -117,12 +120,15 @@
 
 		<div class="container py-3 my-5">
 			<!-- Principal -->
-			<h1 class="my-3 fw-bold text-center texto-hero">Pecora Blog</h1>
+			<h1 class="my-3 fw-bold text-center texto-hero mb-5 mt-0">Pecora Blog</h1>
 
 			<!--Row -->
 			<div class="row">
 				<div class="col-md-8 px-5">
-					<img class="img-fluid" src="/assets/stock/friends.jpg" alt="" />
+					<img
+						class="img-fluid mb-5 px-3"
+						src="/assets/place/salon2.jpeg"
+						alt="" />
 				</div>
 
 				<div class="col-md-4 order-md-first order-sm-last px-4">
@@ -146,98 +152,269 @@
 			<!-- Row -->
 
 			<!-- Row Otros artículos -->
-			<h3 class="my-4">Otros artículos</h3>
 
-			<div class="row">
-				<div class="col-md-3 col-sm-6 mb-4">
-					<a href="#">
-						<img class="img-fluid" src="/assets/place/bodegon.jpeg" alt="" />
-					</a>
-				</div>
-
-				<div class="col-md-3 col-sm-6 mb-4">
-					<a href="#">
-						<img class="img-fluid" src="/assets/place/cocina2.jpeg" alt="" />
-					</a>
-				</div>
-
-				<div class="col-md-3 col-sm-6 mb-4">
-					<a href="#">
-						<img class="img-fluid" src="/assets/place/halloween.jpeg" alt="" />
-					</a>
-				</div>
-
-				<div class="col-md-3 col-sm-6 mb-4">
-					<a href="#">
-						<img class="img-fluid" src="/assets/place/cheff2.jpeg" alt="" />
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<!-- Row Otros artículos -->
-
-		<!-- Footer-->
-		<footer class="clearfix bg-dark">
-			<div class="container text-center py-2">
-				<div class="row">
-					<div class="col-md-3 d-none d-md-block">
-						<p><span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS</p>
-						<p>
-							Estamos impulsados por la frescura y calidad sin compromisos, la
-							hospitalidad cordial y una creciente lista de platos
-						</p>
-					</div>
-					<div class="col-md-3 d-none d-md-block">
-						<p><span class="bi bi-clock text-info"></span> HORARIO</p>
-
-						<p>Lun-Vie: 11am - 12pm</p>
-						<p>Sab: 11am - 21pm</p>
-						<p>Dom: Cerrado</p>
-					</div>
-					<div class="col-md-3">
-						<p>
-							<span class="bi bi-sign-intersection-fill text-info"></span>
-							CONTACTO
-						</p>
-						<p>54, Calle del Norte, 45086 Madrid, España</p>
-						<p>+34 123 456 789</p>
-						<p><a href="mailto:mail@example.com">info@pecora.com</a></p>
-					</div>
-					<div class="col-md-3">
-						<p><span class="bi bi-envelope text-info"></span> BOLETÍN</p>
-						<div class="input-group">
-							<input
-								type="text"
-								class="form-control m-1 py-1"
-								placeholder="Correo electrónico..." />
-							<span class="input-group-btn">
-								<button class="btn btn-primary" type="button">
-									Suscribirse
-								</button>
-							</span>
+			<div class="container-fluid py-5 text-center mb-5">
+				<h1 class="py-3">Otros artículos</h1>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link active"
+							id="home-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#home"
+							type="button"
+							role="tab"
+							aria-controls="home"
+							aria-selected="true">
+							Bodegon
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link"
+							id="menu1-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#menu1"
+							type="button"
+							role="tab"
+							aria-controls="menu1"
+							aria-selected="false">
+							Chefs
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link"
+							id="menu2-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#menu2"
+							type="button"
+							role="tab"
+							aria-controls="menu2"
+							aria-selected="false">
+							Local
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link"
+							id="menu3-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#menu3"
+							type="button"
+							role="tab"
+							aria-controls="menu3"
+							aria-selected="false">
+							Halloween
+						</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div
+						class="tab-pane fade show active"
+						id="home"
+						role="tabpanel"
+						aria-labelledby="home-tab">
+						<div class="row">
+							<div class="col-md-3 col-sm-6 mb-4">
+								<a href="#">
+									<img
+										class="img-fluid py-3"
+										src="/assets/place/bodegon.jpeg"
+										alt="" />
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 mb-4 py-3">
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											lore Nihil, accusamus.
+										</p>
+									</div>
+								</div>
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											Nihil, loremaccusamus.
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<p>
-							<a
-								class="bi bi-twitter footer-socialicon"
-								target="_blank"
-								href="https://twitter.com/"></a>
-							<a
-								class="bi bi-facebook footer-socialicon"
-								target="_blank"
-								href="https://www.facebook.com/"></a>
-							<a
-								class="bi bi-google footer-socialicon"
-								target="_blank"
-								href="https://www.google.com/"></a>
-							<a
-								class="bi bi-linkedin footer-socialicon"
-								target="_blank"
-								href="https://www.linkedin.com/"></a>
-						</p>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="menu1"
+						role="tabpanel"
+						aria-labelledby="menu1-tab">
+						<div class="row">
+							<div class="col-md-3 col-sm-6 mb-4">
+								<a href="#">
+									<img
+										class="img-fluid py-3"
+										src="/assets/place/cheff2.jpeg"
+										alt="" />
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 mb-4 py-3">
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											lore Nihil, accusamus.
+										</p>
+									</div>
+								</div>
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											Nihil, loremaccusamus.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="menu2"
+						role="tabpanel"
+						aria-labelledby="menu2-tab">
+						<div class="row">
+							<div class="col-md-3 col-sm-6 mb-4">
+								<a href="#">
+									<img
+										class="img-fluid py-3"
+										src="/assets/place/salon1.jpeg"
+										alt="" />
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 mb-4 py-3">
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											lore Nihil, accusamus.
+										</p>
+									</div>
+								</div>
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											Nihil, loremaccusamus.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="menu3"
+						role="tabpanel"
+						aria-labelledby="menu3-tab">
+						<div class="row">
+							<div class="col-md-3 col-sm-6 mb-4">
+								<a href="#">
+									<img
+										class="img-fluid py-3"
+										src="/assets/place/halloween.jpeg"
+										alt="" />
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 mb-4 py-3">
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											lore Nihil, accusamus.
+										</p>
+									</div>
+								</div>
+								<div class="row d-flex flex-row">
+									<div class="col-12 mb-3">
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+											Nihil, loremaccusamus.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+
+			<!-- Row Otros artículos -->
+
+			<!-- Footer-->
+			<footer class="clearfix bg-dark">
+				<div class="container text-center py-2">
+					<div class="row">
+						<div class="col-md-3 d-none d-md-block">
+							<p>
+								<span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS
+							</p>
+							<p>
+								Estamos impulsados por la frescura y calidad sin compromisos, la
+								hospitalidad cordial y una creciente lista de platos
+							</p>
+						</div>
+						<div class="col-md-3 d-none d-md-block">
+							<p><span class="bi bi-clock text-info"></span> HORARIO</p>
+
+							<p>Lun-Vie: 11am - 12pm</p>
+							<p>Sab: 11am - 21pm</p>
+							<p>Dom: Cerrado</p>
+						</div>
+						<div class="col-md-3">
+							<p>
+								<span class="bi bi-sign-intersection-fill text-info"></span>
+								CONTACTO
+							</p>
+							<p>54, Calle del Norte, 45086 Madrid, España</p>
+							<p>+34 123 456 789</p>
+							<p><a href="mailto:mail@example.com">info@pecora.com</a></p>
+						</div>
+						<div class="col-md-3">
+							<p><span class="bi bi-envelope text-info"></span> BOLETÍN</p>
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control m-1 py-1"
+									placeholder="Correo electrónico..." />
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button">
+										Suscribirse
+									</button>
+								</span>
+							</div>
+							<p>
+								<a
+									class="bi bi-twitter footer-socialicon"
+									target="_blank"
+									href="https://twitter.com/"></a>
+								<a
+									class="bi bi-facebook footer-socialicon"
+									target="_blank"
+									href="https://www.facebook.com/"></a>
+								<a
+									class="bi bi-google footer-socialicon"
+									target="_blank"
+									href="https://www.google.com/"></a>
+								<a
+									class="bi bi-linkedin footer-socialicon"
+									target="_blank"
+									href="https://www.linkedin.com/"></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>
