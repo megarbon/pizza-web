@@ -1,101 +1,129 @@
-html,body { margin:0; padding: 0; }
-
-
-body {
-  background: rgb(3, 29, 21);
-  background: linear-gradient(
-    90deg,
-    rgb(5, 64, 46) 0%,
-    rgba(0, 98, 65, 1) 50%,
-    rgba(0, 99, 92, 1) 100%
-  );
-  color: white;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+/*Fuentes de texto*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 h1,
 h2,
 h3 {
-  font-family: "IBM Plex Mono", monospace;
+	font-family: 'IBM Plex Mono', monospace;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 p {
-  font-family: "Tilt Neon", sans-serif;
-  line-height: 25px;
+	font-family: 'Tilt Neon', sans-serif;
+	line-height: 25px;
 }
 
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
 
+/*Color Body*/
+body {
+	background: rgb(3, 29, 21);
+	background: linear-gradient(
+		90deg,
+		rgb(5, 64, 46) 0%,
+		rgba(0, 98, 65, 1) 50%,
+		rgba(0, 99, 92, 1) 100%
+	);
+	color: white;
+}
+
+/*Texto Header*/
 .texto-hero {
-  font-size: 6rem;
-  font-weight: 600;
-  color: #ffffff; /* Color personalizado */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra del texto */
-  letter-spacing: 2px; /* Espaciado entre letras */
-  line-height: 1.2; /* Altura de línea para mejorar la legibilidad */
+	font-size: 6rem;
+	font-weight: 600;
+	color: #ffffff; /* Color personalizado */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra del texto */
+	letter-spacing: 2px; /* Espaciado entre letras */
+	line-height: 1.2; /* Altura de línea para mejorar la legibilidad */
 }
 
+/*Imagen y degradado header*/
 .hero-header {
-  background: linear-gradient(rgba(15, 23, 43, 0.5), rgba(15, 23, 43, 0.9)),
-    url(/assets/stock/header2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
+	background: linear-gradient(rgba(15, 23, 43, 0.5), rgba(15, 23, 43, 0.9)),
+		url(/assets/stock/header2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
 }
 
-.btn-primary {
-  background-color: #ffc30b;
-  border: none;
-  color: black;
-}
-
+/*Colores nav*/
 .navegacion {
-  background: rgb(3, 29, 21);
-  background: linear-gradient(
-    90deg,
-    rgb(0, 64, 59) 100%,
-    rgb(12, 38, 29) 50%,
-    rgb(0, 64, 59) 100%
-  );
-  color: white;
+	background: rgb(3, 29, 21);
+	background: linear-gradient(
+		90deg,
+		rgb(0, 64, 59) 100%,
+		rgb(12, 38, 29) 50%,
+		rgb(0, 64, 59) 100%
+	);
+	color: white;
 }
-
+/*Colores footer*/
 .footer-comun {
-  background: rgb(3, 29, 21);
-  background: linear-gradient(
-    90deg,
-    rgb(2, 26, 24) 100%,
-    rgb(12, 38, 29) 50%,
-    rgb(0, 64, 59) 100%
-  );
-  color: white;
+	background: rgb(3, 29, 21);
+	background: linear-gradient(
+		90deg,
+		rgb(2, 26, 24) 100%,
+		rgb(12, 38, 29) 50%,
+		rgb(0, 64, 59) 100%
+	);
+	color: white;
 }
 
+/*Cabecera pagina carta*/
+.bg-image {
+	background-image: url(/assets/stock/vertical-pizzas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.moving-image {
+	max-width: 100px;
+	height: auto;
+}
+/*iconos reviews*/
+.review-thumbnail {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+}
+
+/*animacion hover*/
+.review-thumbnail:hover {
+	transform: scale(1.1);
+}
+
+/*animacion hover*/
 .style_featured {
-  text-align: center;
+	text-align: center;
 }
 .style_featured > div > div {
-  padding: 10px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: 0.5s;
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	transition: 0.5s;
 }
 .style_featured > div:hover > div {
-  margin-top: +19px;
-  border: 1px solid rgb(164, 250, 153);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
-  background: rgba(153, 200, 250, 0.1);
-  transition: 1s;
+	margin-top: +19px;
+	border: 1px solid rgb(164, 250, 153);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
+	background: rgba(153, 200, 250, 0.1);
+	transition: 1s;
 }
 
-.style_menu_item > div > div{
-  margin-top: +19px;
-  border: 1px solid rgb(194, 255, 183);
-  background: rgba(153, 200, 250, 0.1);
-  border-radius: 10px;
+.style_menu_item > div > div {
+	margin-top: +19px;
+	border: 1px solid rgb(194, 255, 183);
+	background: rgba(153, 200, 250, 0.1);
+	border-radius: 10px;
 }
 
 .container-menu .price-circle {
@@ -108,58 +136,4 @@ p {
 	vertical-align: middle;
 	display: inline-block;
 }
-
-
-.login {
-  min-height: 100vh;
-}
-
-.bg-image {
-  background-image: url(/assets/stock/vertical-pizzas.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.login-heading {
-  font-weight: 300;
-}
-
-.btn-login {
-  font-size: 0.9rem;
-  letter-spacing: 0.05rem;
-  padding: 0.75rem 1rem;
-}
-
-
-/* Tabla principal */
-.table-pizzeria {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #ddd;
-  font-family: Arial, sans-serif;
-  margin-bottom: 20px;
-}
-
-/* Encabezado de la tabla */
-.table-pizzeria th {
-  background-color: #f2f2f2;
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-/* Celdas de la tabla */
-.table-pizzeria td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-/* Estilo de fila alterno */
-.table-pizzeria tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-/* Estilo de fila al pasar el ratón */
-.table-pizzeria tr:hover {
-  background-color: #ddd;
-}
+/*animacion hover*/
