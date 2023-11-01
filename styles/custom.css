@@ -82,10 +82,12 @@ body {
 	background-position: center;
 }
 
+/*Imagenes delivery*/
 .moving-image {
 	max-width: 100px;
 	height: auto;
 }
+
 /*iconos reviews*/
 .review-thumbnail {
 	border-radius: 50%;
@@ -126,6 +128,7 @@ body {
 	border-radius: 10px;
 }
 
+/*circulo precios*/
 .container-menu .price-circle {
 	width: 64px;
 	height: 64px;
