@@ -267,11 +267,14 @@
 					</div>
 					<div class="row text-center align-items-center">
 						<div class="col-4 col-md-4 my-3">
-							<a href="https://www.ubereats.com/es">
+							<a href="https://www.ubereats.com/es" title="Ir a Uber Eats">
 								<img
 									src="/assets/logos/uber-eats.png"
 									alt="Uber Eats"
-									class="img-fluid moving-image" />
+									class="img-fluid moving-image"
+									data-bs-toggle="tooltip"
+									data-bs-placement="left"
+									data-bs-original-title="Ir a Uber Eats" />
 							</a>
 						</div>
 						<div class="col-4 col-md-4 my-3">
@@ -279,7 +282,10 @@
 								<img
 									src="/assets/logos/just-eat.png"
 									alt="Just Eat"
-									class="img-fluid moving-image" />
+									class="img-fluid moving-image"
+									data-bs-toggle="tooltip"
+									data-bs-placement="right"
+									data-bs-original-title="Ir a Just Eat" />
 							</a>
 						</div>
 						<div class="col-4 col-md-4 my-3">
@@ -287,16 +293,22 @@
 								<img
 									src="/assets/logos/deliveroo.png"
 									alt="Deliveroo"
-									class="img-fluid moving-image" />
+									class="img-fluid moving-image"
+									data-bs-toggle="tooltip"
+									data-bs-placement="top"
+									data-bs-original-title="Ir a Deliveroo" />
 							</a>
 						</div>
 					</div>
 					<!-- Mapa de Google -->
-					<div class="row text-center align-items-center">
+					<div class="row text-center align-items-center mt-3">
+						<h3 class="card-text text-white">
+							Encuéntranos al lado de tu casa!
+						</h3>
 						<div class="col-12 my-3">
 							<iframe
 								width="100%"
-								height="300"
+								height="500"
 								frameborder="0"
 								style="border: 0"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30328.55247000546!2d-3.703790346812039!3d40.41677543834658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288f6a6a38b7%3A0x8e964d5c61b19c17!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1504641159247"
@@ -305,79 +317,9 @@
 					</div>
 				</div>
 			</section>
-
-			<!--Seccion de opiniones-->
-			<section class="bg-light py-5 mt-3">
-				<div class="container">
-					<h2 class="text-center mb-5 text-black">Lo que dicen de Nosotros</h2>
-					<div class="row row-cols-1 row-cols-md-3 g-4">
-						<div class="col">
-							<div class="card h-100">
-								<div class="card-body text-center">
-									<p class="card-text text-black">
-										"¡Me han pagado para escribir esto! 🤑"
-									</p>
-									<p class="card-text text-black">- Emilio Cherto 🕶️</p>
-									<img
-										src="/assets/people/elmo.jpg"
-										class="img-thumbnail mx-auto my-4 review-thumbnail"
-										alt="Emilio Cherto" />
-									<p class="text-warning">
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-half"></span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100">
-								<div class="card-body text-center">
-									<p class="card-text text-black">
-										"¡Me sirvieron una ensalada de puños! 👊🥗"
-									</p>
-									<p class="card-text text-black">- Guillermo Diaz 💪</p>
-									<img
-										src="/assets/people/willy.jpeg"
-										class="img-thumbnail mx-auto my-4 review-thumbnail"
-										alt="Guillermo Diaz" />
-									<p class="text-warning">
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100">
-								<div class="card-body text-center">
-									<p class="card-text text-black">
-										"¡Buenísimo lugar, el mascarpone es lo mejor! 🍨"
-									</p>
-									<p class="card-text text-black">- Samuel de Luque 🎮</p>
-									<img
-										src="/assets/people/vegetta777.jpg"
-										class="img-thumbnail mx-auto my-4 review-thumbnail"
-										alt="Samuel de Luque" />
-									<p class="text-warning">
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-fill"></span>
-										<span class="bi bi-star-half"></span>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 		</div>
 
-		<div class="table-responsive w-75 mx-auto rounded-2 py-5">
+		<div class="table-responsive w-75 mx-auto rounded-2 py-2">
 			<h2 class="text-center py-3">Horario de Atención</h2>
 			<table
 				class="table table-bordered table-striped table-hover text-dark bg-light">
@@ -520,9 +462,160 @@
 			</div>
 		</div>
 
+		<!--Reviews de clientes-->
+		<section class="mb-0">
+			<div class="container">
+				<h1 class="section-header">
+					<span>Valoraciones de Clientes</span>
+				</h1>
+				<div class="testimonials">
+					<div
+						id="carouselExampleControls"
+						class="carousel slide"
+						data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="single-item">
+									<div class="row">
+										<div class="col-md-5">
+											<div class="profile">
+												<div class="img-area">
+													<img src="assets/people/willy.jpeg" alt="" />
+												</div>
+												<div class="bio">
+													<h2>Guillermo Díaz</h2>
+													<h4>Cliente Satisfecho</h4>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="content">
+												<p>
+													<span><i class="bi bi-chat-left-quote"></i></span>
+													¡La mejor pizza que he probado en mi vida! Increíble
+													sabor y textura. 10/10, ¡recomendado!
+												</p>
+												<p class="socials">
+													<i class="bi bi-twitch"></i>
+													<i class="bi bi-instagram"></i>
+													<i class="bi bi-youtube"></i>
+												</p>
+												<p class="text-warning">
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-half"></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="single-item">
+									<div class="row">
+										<div class="col-md-5">
+											<div class="profile">
+												<div class="img-area">
+													<img src="assets/people/vegetta777.jpg" alt="" />
+												</div>
+												<div class="bio">
+													<h2>Samuel de Luque</h2>
+													<h4>vegetta777</h4>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="content">
+												<p>
+													<span><i class="bi bi-chat-left-quote"></i></span>
+													¡No me canso de sus pizzas! Increíbles combinaciones
+													de ingredientes, ¡totalmente deliciosas! 5 estrellas.
+												</p>
+												<p class="socials">
+													<i class="bi bi-twitch"></i>
+													<i class="bi bi-instagram"></i>
+													<i class="bi bi-youtube"></i>
+												</p>
+												<p class="text-warning">
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="single-item">
+									<div class="row">
+										<div class="col-md-5">
+											<div class="profile">
+												<div class="img-area">
+													<img src="assets/people/elmo.jpg" alt="" />
+												</div>
+												<div class="bio">
+													<h2>Elmillor</h2>
+													<h4>Padre funador</h4>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="content">
+												<p>
+													<span><i class="bi bi-chat-left-quote"></i></span>
+													La Pecora tiene las pizzas más jugosas y sabrosas que
+													he probado. ¡Volveré por más!
+												</p>
+												<p class="socials">
+													<i class="bi bi-twitch"></i>
+													<i class="bi bi-instagram"></i>
+													<i class="bi bi-youtube"></i>
+												</p>
+												<p class="text-warning">
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+													<span class="bi bi-star-fill"></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleControls"
+							data-bs-slide="prev">
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleControls"
+							data-bs-slide="next">
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Footer-->
 		<footer class="clearfix bg-dark">
-			<div class="container text-center py-2">
+			<div class="container text-center">
 				<div class="row">
 					<div class="col-md-3 d-none d-md-block">
 						<p><span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS</p>

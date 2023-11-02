@@ -98,19 +98,9 @@ Una sección adicional recuerda a los clientes que se ofrece servicio de entrega
 - Se utiliza un fondo con degradado (bg-gradient) para resaltar esta sección y diferenciarla visualmente del resto del contenido, atrayendo la atención del usuario de manera efectiva.
 - Se integra un mapa interactivo utilizando la API de Google Maps, que permite a los clientes ubicar fácilmente el local y tener una referencia clara para realizar pedidos o recoger los productos en persona.
 - Se incluyen enlaces a las diferentes plataformas de reparto, lo que facilita que los usuarios accedan rápidamente a la página correspondiente y realicen pedidos de manera conveniente.
+- He implementado unos tooltips para indicar al usuario al acción que va a realizar en caso de pulsar la imagen, esto también es un elemento nuevo no visto en clase.
 
 Esta sección está diseñada con el objetivo de resaltar la conveniencia y accesibilidad de los servicios de entrega a domicilio, lo que contribuye a aumentar la comodidad y la satisfacción del cliente.
-
-## Sección de Opiniones
-
-La sección de opiniones presenta comentarios de clientes famosos, que se acompañan de un icono de avatar representativo de la persona, su nombre y su valoración en forma de estrellas de la biblioteca `Bootstrap Icons`.
-
-- Se utiliza la clase `bg-light` para aplicar un fondo claro a la sección, lo que mejora la legibilidad y la presentación de las opiniones de los clientes.
-- La sección está diseñada con márgenes superiores (`mt-3`) y un relleno interno (`py-5`), lo que asegura un espaciado adecuado y una presentación visual equilibrada en la página.
-- Se ha aplicado la clase `row-cols-1 row-cols-md-3` para ajustar el número de columnas en función del tamaño de la pantalla, permitiendo que las tarjetas de opinión se muestren en una sola columna en dispositivos móviles y en tres columnas en pantallas medianas.
-- Se han utilizado imágenes de avatares de diferentes clientes, lo que agrega un toque personal y humano a las opiniones.
-
-Esta sección se ha diseñado con el propósito de generar confianza y credibilidad entre los visitantes, al destacar las experiencias positivas de clientes notables y reconocidos.
 
 ## Horario de Atención
 
@@ -135,4 +125,32 @@ La sección de "Novedades y Eventos" en la página web proporciona a los visitan
 - La columna más pequeña presenta un código QR que permite a los clientes acceder de manera rápida y sencilla al menú especial del restaurante. El código QR se visualiza de manera atractiva utilizando la clase `img-fluid` y un estilo específico de altura para mantener una presentación equilibrada.
 - Aunque pueda parecer que no, realmente el QR está centrado y es funcional.
 
+## Sección de Opiniones
+
+La sección de opiniones presenta comentarios de clientes famosos, que se acompañan de un icono de avatar representativo de la persona, su nombre y su valoración en forma de estrellas de la biblioteca `Bootstrap Icons`.
+
+- "carousel": para crear un carrusel de testimonios que se desplaza automáticamentey también tiene un botón que permite navegar manualmente, esto utiliza el js de la biblioteca bootsrap que permite hacer un carrousel.
+- "row" y "col-md-5": para dividir la sección en dos columnas en pantallas medianas y grandes.
+- "img-area" y "bio": para formatear la imagen y la información del cliente.
+- "content": para estructurar el contenido de la reseña.
+
+Esta sección se ha diseñado con el propósito de generar confianza y credibilidad entre los visitantes, al destacar las experiencias positivas de clientes notables y reconocidos.
+
 Finalmente en esta página solo queda el footer del cual ya hemos hablado al principio.
+
+# CARTA
+
+La sección de la carta presenta un diseño atractivo y bien estructurado, enfocado en resaltar los platos principales de la pizzería.
+
+- Se utiliza un contenedor principal con clases que controlan su ancho y flujo de desbordamiento para asegurar una presentación adecuada en diferentes tamaños de pantalla.
+- La sección se compone de una fila con dos columnas, donde la primera columna contiene una imagen que se ajusta dinámicamente utilizando la clase "img-fluid" para adaptarse al ancho del contenedor.
+- La segunda columna presenta un título atractivo con formato de texto destacado y un párrafo descriptivo que resalta los platos italianos y su variedad. Los botones de navegación se presentan de forma llamativa y permiten un acceso rápido a secciones específicas del menú. Estos botones son contenido nuevo que no se ha explicado en clase.
+- Además, se incluye un apartado de registro para ofertas especiales en la parte derecha en pantallas más grandes, que se oculta en pantallas más pequeñas para mejorar la legibilidad y la experiencia del usuario.
+
+- Las clases `d-none` y `d-sm-block` se utilizan para controlar la visibilidad de la imagen principal en función del tamaño de la pantalla.
+
+## Botones
+
+- `btn`: Es la clase base para un botón en Bootstrap. Puede usarse para crear botones simples con estilos predeterminados.
+- `btn-primary`: Es una clase que proporciona un estilo de botón primario con un color de fondo llamativo. Este tipo de botón se utiliza generalmente para acciones importantes o destacadas en el sitio web.
+- `btn-outline-info`: Es una clase que se utiliza para crear botones con un contorno y un color de texto específico. Este estilo es útil cuando se desea un botón más discreto pero que aún se destaque en la página.
