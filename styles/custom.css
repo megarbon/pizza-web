@@ -180,14 +180,11 @@ section {
 	margin-bottom: 30px;
 	text-align: center;
 }
-.img-area {
-	margin: 0 15px 15px 15px;
-}
 .img-area img {
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
-	border: 7px solid rgb(146, 255, 202);
+	border: 7px solid rgb(1, 135, 77);
 }
 .content {
 	font-size: 18px;
@@ -198,12 +195,11 @@ section {
 .content p span {
 	font-size: 48px;
 	margin-right: 20px;
-	color: rgb(185, 255, 207);
+	color: rgb(255, 219, 14);
 }
 .socials i {
 	margin-right: 25px;
 }
-
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
 	background-color: rgb(15, 36, 23);

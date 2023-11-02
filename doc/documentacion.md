@@ -149,8 +149,66 @@ La sección de la carta presenta un diseño atractivo y bien estructurado, enfoc
 
 - Las clases `d-none` y `d-sm-block` se utilizan para controlar la visibilidad de la imagen principal en función del tamaño de la pantalla.
 
-## Botones
+#### Botones
 
 - `btn`: Es la clase base para un botón en Bootstrap. Puede usarse para crear botones simples con estilos predeterminados.
 - `btn-primary`: Es una clase que proporciona un estilo de botón primario con un color de fondo llamativo. Este tipo de botón se utiliza generalmente para acciones importantes o destacadas en el sitio web.
 - `btn-outline-info`: Es una clase que se utiliza para crear botones con un contorno y un color de texto específico. Este estilo es útil cuando se desea un botón más discreto pero que aún se destaque en la página.
+
+# Menú
+
+La estructura principal está contenida dentro de un div con la clase container-menu. Dentro de este contenedor, hay un div adicional con la clase container, que envuelve todo el contenido de la sección.
+
+Se define un encabezado principal con la clase page-header, donde se destaca el título "Antipasti", "Pizzas", "Bebidas"... El estilo se ajusta con la clase text-center para centrar el texto y text-white para cambiar el color del texto a blanco.
+
+Luego, se crea un contenedor dividido en dos columnas utilizando la clase row. La primera columna, con una imagen representativa, se configura utilizando la clase col-md-6. La imagen se ajusta utilizando la clase img-fluid para que sea adaptable al tamaño de la pantalla.
+
+La segunda columna contiene elementos de menú específicos, cada uno con un título de plato, descripción y precio. Estos elementos se organizan en filas (row) y columnas (col) y se aplican estilos de separación y espacio utilizando clases como menu-dish y menu-price que son estilos personalizados.
+
+En general, se utilizan varias clases de Bootstrap, como text-center, shadow, rounded, y border, para proporcionar un diseño visual atractivo y una disposición estructurada de los elementos del menú.
+
+Este componente se repite en los 4 elementos del menú y sale alternado derecha e izquierda. También tiene una pequeña animación de hover.
+
+# Blog
+
+## Artículo principal
+
+La sección está contenida dentro de una fila (`row`) de dos columnas, diseñadas para una disposición específica en la página. Ambas columnas están ajustadas para dispositivos de tamaño mediano (`col-md-8` y `col-md-4` respectivamente) y cuentan con estilos personalizados.
+
+- La primera columna (`col-md-8`) contiene una imagen fluida y adaptable al tamaño de la pantalla, proporcionando una vista visual del entorno del restaurante 'La Pecora'. La imagen se ajusta en tamaño y espaciado utilizando las clases `img-fluid` y `mb-5`.
+
+- La segunda columna (`col-md-4`) muestra un texto descriptivo detallado sobre el origen y la esencia del restaurante. El texto está centrado y justificado a la izquierda (`text-start`) para mejorar la legibilidad y la estética. Se aplican estilos de espaciado y margen utilizando las clases `my-3` y `px-4`.
+
+Esta sección proporciona una sección informativa y atractiva que captura la esencia y la historia detrás del restaurante 'La Pecora', ofreciendo a los lectores una comprensión más profunda del ambiente y los valores del lugar.
+
+## Pestañas otros artículos
+
+Se utiliza la clase `container-fluid` para ajustar la sección de manera que ocupe todo el ancho del contenedor padre, brindando una presentación visual atractiva y espaciosa.
+
+- Las pestañas se implementan con la clase `nav nav-tabs` para permitir la selección interactiva de diferentes temas. Cada pestaña está diseñada como un botón (`<button>`) y se organiza en una lista (`<ul>`) para facilitar la navegación entre las distintas categorías de contenido.
+
+- La sección de contenido de la pestaña utiliza la clase `tab-content` para contener el contenido específico asociado con cada pestaña. Se utiliza la clase `tab-pane` junto con `fade show active` para mostrar el contenido activo de la pestaña principal.
+
+- Dentro de la pestaña principal, se presentan imágenes y texto relacionado con el tema específico. Las imágenes se ajustan a la cuadrícula (`row`) y se aplican estilos para el espaciado y el margen utilizando las clases `col-md-3`, `col-sm-6`, y `mb-4` respectivamente para los diferentes tamaños de pantalla.
+
+- El texto relacionado con los temas de cada pestaña se presenta de manera clara y concisa, proporcionando a los lectores una idea general de los artículos y temas destacados relacionados con el restaurante 'La Pecora'.
+
+Esta página tiene el mismo nav y footer que la de la carta.
+
+    # About Us
+
+La página está diseñada con una disposición de dos columnas. Utiliza una clase container-fluid para ocupar todo el ancho de la pantalla y se organiza en una estructura de filas y columnas (row y col) utilizando el sistema de rejilla de Bootstrap.
+
+En la columna de la izquierda (en dispositivos de tamaño medianos y grandes), se muestra una imagen de fondo (bg-image) para mejorar la presentación visual de la página, en pantallas pequeñas esta imagen no se muestra.
+
+En la columna de la derecha, se encuentra el formulario de contacto. El formulario de contacto presenta campos para el nombre, dirección de correo electrónico y mensaje, con etiquetas flotantes para proporcionar una guía clara y concisa sobre la información que se debe ingresar en cada campo.
+
+El formulario incluye un botón de envío (Enviar) que utiliza las clases de Bootstrap para estilizar y alinear el botón de manera adecuada.
+
+El contenido textual en esta sección incluye un logotipo del restaurante, un encabezado llamativo que pregunta "¿Quieres Trabajar?", seguido de una cita y el autor correspondiente para añadir un toque personal y atractivo a la sección.
+
+- blockquote: Aplicada para dar formato al contenido de la cita en el texto, creando un efecto visual distintivo y llamativo.
+
+- form-floating: Empleada para personalizar los campos del formulario con etiquetas flotantes, lo que facilita la experiencia de usuario al proporcionar una guía clara y concisa sobre la información que se debe ingresar en cada campo.
+
+Finalmente tenemos el footer y el nav de la página principal.
